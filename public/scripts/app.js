@@ -31,6 +31,32 @@ var template = React.createElement(
         )
     )
 );
+
+// create a templateTwo var JSX expression
+// root div
+// h1 tag -> Sarah Cooke
+// p tag -> age: 30
+// p tag -> location: Mpls, MN
+// render templateTwo instead of template
+var templateTwo = React.createElement(
+    'div',
+    null,
+    React.createElement(
+        'h1',
+        null,
+        'Sarah Cooke'
+    ),
+    React.createElement(
+        'p',
+        null,
+        'Age: 30'
+    ),
+    React.createElement(
+        'p',
+        null,
+        'Location: Minneapolis, MN'
+    )
+);
 var appRoot = document.getElementById('app');
 
-ReactDOM.render(template, appRoot);
+ReactDOM.render(templateTwo, appRoot);
