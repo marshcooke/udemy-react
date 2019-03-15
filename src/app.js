@@ -12,14 +12,16 @@ var template = (
     </div>
 );
 
-var userName = 'Mike';
-var userAge = 30;
-var userLocation = 'Minneapolis';
+var user = {
+    name: 'Sarah',
+    age: 30,
+    location: 'Minneapolis'
+};
 var templateTwo = (
     <div>
-        <h1>{userName}</h1>
-        <p>Age: {userAge}</p>
-        <p>Location: {userLocation}</p>
+        <h1>{user.name}</h1>
+        <p>Age: {user.age}</p>
+        <p>Location: {user.location}</p>
     </div>
 );
 var appRoot = document.getElementById('app');
