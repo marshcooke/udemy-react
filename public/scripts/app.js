@@ -6,7 +6,7 @@ console.log('App.js is running!');
 var app = {
     title: 'Indecisive Today?',
     subtitle: 'Give this a try!',
-    options: ['One', 'Two']
+    options: ['One', 'Two', 'Three']
 };
 var template = React.createElement(
     'div',

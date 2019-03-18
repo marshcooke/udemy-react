@@ -6,7 +6,8 @@ var app = {
     subtitle: 'Give this a try!',
     options: [
         'One', 
-        'Two'
+        'Two',
+        'Three'
     ]
 };
 var template = (
