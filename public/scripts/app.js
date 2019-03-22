@@ -77,9 +77,6 @@ var templateTwo = React.createElement(
         'Reset'
     )
 );
-// challenge
-// make button "-1"; set up minusOne function and register (onclick handler); log 'minusOne' everytime clicked
-// make reset button "reset"; set up reset function and register (onclick handler); log 'reset' everytime clicked
 
 var appRoot = document.getElementById('app');
 

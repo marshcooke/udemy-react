@@ -40,9 +40,6 @@ const templateTwo = (
         <button onClick={reset}>Reset</button>
         </div>
 );
-// challenge
-// make button "-1"; set up minusOne function and register (onclick handler); log 'minusOne' everytime clicked
-// make reset button "reset"; set up reset function and register (onclick handler); log 'reset' everytime clicked
 
 const appRoot = document.getElementById('app');
 
