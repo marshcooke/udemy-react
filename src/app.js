@@ -39,7 +39,7 @@ const render = () => {
             {app.subtitle && <p>{app.subtitle}</p>}
             <p>{app.options.length > 0 ? 'Here are your options:' : 'There are no options'}</p>
             <button disabled={app.options.length === 0} onClick={onMakeDecision}>What Should I do?</button>
-            <button onClick={onRemoveAll}>Remove All</button>
+            <button onClick={onRemoveAll}>Remove All!</button>
             <ol>
                 {app.options.map((option) => {
                     return <li key={option}>{option}</li>;
@@ -54,6 +54,7 @@ const render = () => {
     );
 
     ReactDOM.render(template, appRoot);
+    
 };
 
 render();
