@@ -25,7 +25,9 @@ const onRemoveAll = () => {
 };
 
 const onMakeDecision = () => {
+
     const randomNum = Math.floor(Math.random() * app.options.length);
+    
     const option = app.options[randomNum];
     alert(option);
 };
@@ -33,6 +35,7 @@ const onMakeDecision = () => {
 const appRoot = document.getElementById('app');
 
 const render = () => {
+
     const template = (
         <div>
             <h1>{app.title}</h1>

@@ -27,7 +27,9 @@ var onRemoveAll = function onRemoveAll() {
 };
 
 var onMakeDecision = function onMakeDecision() {
+
     var randomNum = Math.floor(Math.random() * app.options.length);
+
     var option = app.options[randomNum];
     alert(option);
 };
@@ -35,6 +37,7 @@ var onMakeDecision = function onMakeDecision() {
 var appRoot = document.getElementById('app');
 
 var render = function render() {
+
     var template = React.createElement(
         'div',
         null,
