@@ -117,9 +117,6 @@ var Options = function (_React$Component4) {
     return Options;
 }(React.Component);
 
-// Option -> Option component here
-
-
 var Option = function (_React$Component5) {
     _inherits(Option, _React$Component5);
 

@@ -43,7 +43,6 @@ class Options extends React.Component {
     }
 }
 
-// Option -> Option component here
 class Option extends React.Component {
     render() {
         return (
