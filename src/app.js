@@ -23,9 +23,9 @@ class Options extends React.Component {
     render() {
         return (
             <div>
-                <p>Options component here</p>
+                Options component here
             </div>
-        )
+        );
     }
 }
 
@@ -33,14 +33,11 @@ class AddOption extends React.Component {
     render() {
         return (
             <div>
-                <p>AddOptions component here</p>
+                AddOptions component here
             </div>
-        )
+        );
     }
 }
-// Options -> render static text: Options component here
-
-// AddOption -> AddOptions component here 
 
 const jsx = (
     <div>

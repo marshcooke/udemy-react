@@ -82,11 +82,7 @@ var Options = function (_React$Component3) {
             return React.createElement(
                 'div',
                 null,
-                React.createElement(
-                    'p',
-                    null,
-                    'Options component here'
-                )
+                'Options component here'
             );
         }
     }]);
@@ -109,20 +105,13 @@ var AddOption = function (_React$Component4) {
             return React.createElement(
                 'div',
                 null,
-                React.createElement(
-                    'p',
-                    null,
-                    'AddOptions component here'
-                )
+                'AddOptions component here'
             );
         }
     }]);
 
     return AddOption;
 }(React.Component);
-// Options -> render static text: Options component here
-
-// AddOption -> AddOptions component here 
 
 var jsx = React.createElement(
     'div',
