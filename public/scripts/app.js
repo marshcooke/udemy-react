@@ -80,6 +80,11 @@ var Action = function (_React$Component3) {
     }
 
     _createClass(Action, [{
+        key: 'handlePick',
+        value: function handlePick() {
+            alert('handlePick');
+        }
+    }, {
         key: 'render',
         value: function render() {
             return React.createElement(
@@ -87,7 +92,7 @@ var Action = function (_React$Component3) {
                 null,
                 React.createElement(
                     'button',
-                    null,
+                    { onClick: this.HandlePick },
                     'What should I do?'
                 )
             );
@@ -96,6 +101,11 @@ var Action = function (_React$Component3) {
 
     return Action;
 }(React.Component);
+
+// Add remove all button
+// set up handleRemoveAll -> alert some message to the screen
+// set up onLick
+
 
 var Options = function (_React$Component4) {
     _inherits(Options, _React$Component4);
@@ -107,11 +117,21 @@ var Options = function (_React$Component4) {
     }
 
     _createClass(Options, [{
+        key: 'handleRemoveAll',
+        value: function handleRemoveAll() {
+            alert('handleRemoveAll');
+        }
+    }, {
         key: 'render',
         value: function render() {
             return React.createElement(
                 'div',
                 null,
+                React.createElement(
+                    'button',
+                    { onClick: this.handleRemoveAll },
+                    'Remove All'
+                ),
                 this.props.options.map(function (option) {
                     return React.createElement(Option, { key: option, optionText: option });
                 })
