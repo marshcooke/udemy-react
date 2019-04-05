@@ -160,10 +160,6 @@ var Option = function (_React$Component5) {
     return Option;
 }(React.Component);
 
-// 1. set up the form with the text input and submit button
-// 2. wire up onSubmit
-// 3. definte the method wired to onSubmit, handleAddOption -> fetch the value typed -> if value, then alert
-
 var AddOption = function (_React$Component6) {
     _inherits(AddOption, _React$Component6);
 
@@ -178,7 +174,7 @@ var AddOption = function (_React$Component6) {
         value: function handleAddOption(e) {
             e.preventDefault();
 
-            var option = e.target.elements.option.value;
+            var option = e.target.elements.option.value.trim();
 
             if (option) {
                 alert(option);
