@@ -19,14 +19,15 @@ var Counter = function (_React$Component) {
         _this.handleAddOne = _this.handleAddOne.bind(_this);
         _this.handleMinusOne = _this.handleMinusOne.bind(_this);
         _this.handleReset = _this.handleReset.bind(_this);
+        _this.state = {
+            count: 0
+        };
         return _this;
     }
 
     _createClass(Counter, [{
         key: 'handleAddOne',
-        value: function handleAddOne() {
-            console.log('handleAddOne');
-        }
+        value: function handleAddOne() {}
     }, {
         key: 'handleMinusOne',
         value: function handleMinusOne() {
@@ -46,7 +47,8 @@ var Counter = function (_React$Component) {
                 React.createElement(
                     'h1',
                     null,
-                    'Count: #'
+                    'Count: ',
+                    this.state.count
                 ),
                 React.createElement(
                     'button',
@@ -69,10 +71,6 @@ var Counter = function (_React$Component) {
 
     return Counter;
 }(React.Component);
-
-// set up 3 methods: handleAddOne, handleMinusOne, handleReset - 
-// use console.log to print the method name ('handleAddOne'); etc - 
-// wire up onClick for all three buttons and bind in the constructor function - 
 
 ReactDOM.render(React.createElement(Counter, null), document.getElementById('app'));
 

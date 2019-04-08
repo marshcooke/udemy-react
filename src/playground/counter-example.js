@@ -4,9 +4,12 @@ class Counter extends React.Component {
         this.handleAddOne = this.handleAddOne.bind(this);
         this.handleMinusOne = this.handleMinusOne.bind(this);
         this.handleReset = this.handleReset.bind(this);
+        this.state = {
+            count: 0
+        };
     }
     handleAddOne() {
-        console.log('handleAddOne');
+        
     }
     handleMinusOne() {
         console.log('handleMinusOne');
@@ -17,7 +20,7 @@ class Counter extends React.Component {
     render() {
         return (
             <div>
-                <h1>Count: #</h1>
+                <h1>Count: {this.state.count}</h1>
                 <button onClick={this.handleAddOne}>+1</button>
                 <button onClick={this.handleMinusOne}>-1</button>
                 <button onClick={this.handleReset}>Reset</button>
@@ -25,10 +28,6 @@ class Counter extends React.Component {
         );
     }
 } 
-
-// set up 3 methods: handleAddOne, handleMinusOne, handleReset - 
-// use console.log to print the method name ('handleAddOne'); etc - 
-// wire up onClick for all three buttons and bind in the constructor function - 
 
 ReactDOM.render(<Counter />, document.getElementById('app'));
 
