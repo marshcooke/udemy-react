@@ -51,6 +51,7 @@ var Counter = function (_React$Component) {
                     count: prevState.count = 0
                 };
             });
+            // console.log('handleReset');
         }
     }, {
         key: 'render',
