@@ -21,7 +21,7 @@ var VisibilityToggle = function (_React$Component) {
 
         _this.handleToggleVisibility = _this.handleToggleVisibility.bind(_this);
         _this.state = {
-            visibility: true
+            visibility: false
         };
         return _this;
     }
@@ -31,13 +31,13 @@ var VisibilityToggle = function (_React$Component) {
         value: function handleToggleVisibility() {
             this.setState(function (prevState) {
                 return {
-                    visibility: !prevState
+                    visibility: !prevState.visibility
                 };
             });
         }
     }, {
-        key: 'renter',
-        value: function renter() {
+        key: 'render',
+        value: function render() {
             return React.createElement(
                 'div',
                 null,
@@ -49,12 +49,12 @@ var VisibilityToggle = function (_React$Component) {
                 React.createElement(
                     'button',
                     { onClick: this.handleToggleVisibility },
-                    visibility ? 'Hide Details' : 'Show Details'
+                    this.state.visibility ? 'Hide Details' : 'Show Details'
                 ),
-                React.createElement(
+                this.state.visibility && React.createElement(
                     'div',
                     null,
-                    visibility && React.createElement(
+                    React.createElement(
                         'p',
                         null,
                         ' Aloha, this means you\'re showing the details.'
@@ -68,34 +68,3 @@ var VisibilityToggle = function (_React$Component) {
 }(React.Component);
 
 ReactDOM.render(React.createElement(VisibilityToggle, null), document.getElementById('app'));
-
-// console.log('App.js is running!');
-
-// let visibility = false; 
-
-// const toggleVisibility = () => {
-//     visibility = !visibility; 
-//     render();
-// };
-
-// const appRoot = document.getElementById('app');
-
-// const render = () => {
-//     const template = (
-//         <div>
-//             <h1>Visibility Toggle</h1>
-//             <button onClick={toggleVisibility}>
-//             {visibility ? 'Hide Details' : 'Show Details'}
-//             </button>
-//             {visibility && (
-//                 <div>
-//                     <p>Aloha, this means you're showing all the details.</p>
-//                 </div>
-//             )}
-//         </div>
-//     );
-
-//     ReactDOM.render(template, appRoot);
-// };
-
-// render();
