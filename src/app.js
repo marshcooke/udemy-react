@@ -17,9 +17,8 @@ class IndecisionApp extends React.Component {
     handlePick() {
         this.setState(() => {
             const randomNum = Math.floor(Math.random() * this.state.options.length);
-    
             const option = this.state.options[randomNum];
-            alert('test');
+            alert(option);
         });
     }
     // create handlePick - pass down to Action and set up onClick - bind here

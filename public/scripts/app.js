@@ -40,9 +40,8 @@ var IndecisionApp = function (_React$Component) {
 
             this.setState(function () {
                 var randomNum = Math.floor(Math.random() * _this2.state.options.length);
-
                 var option = _this2.state.options[randomNum];
-                alert('test');
+                alert(option);
             });
         }
         // create handlePick - pass down to Action and set up onClick - bind here
