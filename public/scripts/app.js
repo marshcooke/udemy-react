@@ -44,9 +44,6 @@ var IndecisionApp = function (_React$Component) {
                 alert(option);
             });
         }
-        // create handlePick - pass down to Action and set up onClick - bind here
-        // randomly pick option and alert it
-
     }, {
         key: 'render',
         value: function render() {
