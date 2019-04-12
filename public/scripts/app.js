@@ -35,26 +35,16 @@ var IndecisionApp = function (_React$Component) {
         }
     }, {
         key: 'handlePick',
-        value: function (_handlePick) {
-            function handlePick() {
-                return _handlePick.apply(this, arguments);
-            }
-
-            handlePick.toString = function () {
-                return _handlePick.toString();
-            };
-
-            return handlePick;
-        }(function () {
+        value: function handlePick() {
             var _this2 = this;
 
             this.setState(function () {
                 var randomNum = Math.floor(Math.random() * _this2.state.options.length);
 
                 var option = _this2.state.options[randomNum];
-                alert(handlePick);
+                alert('test');
             });
-        })
+        }
         // create handlePick - pass down to Action and set up onClick - bind here
         // randomly pick option and alert it
 
