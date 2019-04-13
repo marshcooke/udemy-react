@@ -60,8 +60,6 @@ class IndecisionApp extends React.Component {
     }
 }
 
-// options, option, header coversion
-
 const Header = (props) => {
     return (
         <div>
@@ -73,7 +71,12 @@ const Header = (props) => {
 
 // class Header extends React.Component {
 //     render() {
-
+//         return (
+//             <div>
+//                 <h1>{props.title}</h1>
+//                 <h2>{props.subtitle}</h2>
+//             </div>
+//         );
 //     }
 // }
 
@@ -118,7 +121,14 @@ const Options = (props) => {
 
 // class Options extends React.Component {
 //     render() {
-
+//         return (
+//             <div>
+//                 <button onClick={props.handleDeleteOptions}>Remove All</button>
+//                 {
+//                     props.options.map((option) => <Option key={option} optionText={option}/>)
+//                 }
+//             </div>
+//         );
 //     }
 // }
 
@@ -132,7 +142,11 @@ const Option = (props) => {
 
 // class Option extends React.Component {
 //     render() {
-
+//         return (
+//             <div>
+//                 {props.optionText}
+//             </div>
+//         );
 //     }
 // }
 

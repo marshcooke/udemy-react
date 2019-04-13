@@ -90,8 +90,6 @@ var IndecisionApp = function (_React$Component) {
     return IndecisionApp;
 }(React.Component);
 
-// options, option, header coversion
-
 var Header = function Header(props) {
     return React.createElement(
         'div',
@@ -111,7 +109,12 @@ var Header = function Header(props) {
 
 // class Header extends React.Component {
 //     render() {
-
+//         return (
+//             <div>
+//                 <h1>{props.title}</h1>
+//                 <h2>{props.subtitle}</h2>
+//             </div>
+//         );
 //     }
 // }
 
@@ -162,7 +165,14 @@ var Options = function Options(props) {
 
 // class Options extends React.Component {
 //     render() {
-
+//         return (
+//             <div>
+//                 <button onClick={props.handleDeleteOptions}>Remove All</button>
+//                 {
+//                     props.options.map((option) => <Option key={option} optionText={option}/>)
+//                 }
+//             </div>
+//         );
 //     }
 // }
 
@@ -176,7 +186,11 @@ var Option = function Option(props) {
 
 // class Option extends React.Component {
 //     render() {
-
+//         return (
+//             <div>
+//                 {props.optionText}
+//             </div>
+//         );
 //     }
 // }
 
