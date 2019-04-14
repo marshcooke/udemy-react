@@ -51,15 +51,11 @@ var IndecisionApp = function (_React$Component) {
             } else if (this.state.options.indexOf(option) > -1) {
                 return 'This option already exists.';
             }
-            // convert both this.setStates to implicitly return an object
-            // this.setState((prevState) => {
-            //     return {
-            //         options: prevState.options.concat(option)
-            //     };
-            // });
 
             this.setState(function (prevState) {
-                return { options: [prevState.options.concat(option)] };
+                return {
+                    options: [prevState.options.concat(option)]
+                };
             });
         }
     }, {
@@ -174,11 +170,6 @@ var AddOption = function (_React$Component2) {
 
             var option = e.target.elements.option.value.trim();
             var error = this.props.handleAddOption(option);
-
-            // convert both this.setStates to implicitly return an object
-            // this.setState(() => {
-            //     return { error };
-            // });
 
             this.setState(function () {
                 return { error: error };
