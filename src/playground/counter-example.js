@@ -1,5 +1,3 @@
-// count value - set up default prop value (like options) = to 0
-
 class Counter extends React.Component {
     constructor(props) {
         super(props);
