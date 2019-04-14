@@ -9,7 +9,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 // stateless functional component
-// 
 
 var IndecisionApp = function (_React$Component) {
     _inherits(IndecisionApp, _React$Component);
@@ -107,17 +106,6 @@ var Header = function Header(props) {
     );
 };
 
-// class Header extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <h1>{props.title}</h1>
-//                 <h2>{props.subtitle}</h2>
-//             </div>
-//         );
-//     }
-// }
-
 var Action = function Action(props) {
     return React.createElement(
         'div',
@@ -132,21 +120,6 @@ var Action = function Action(props) {
         )
     );
 };
-
-// class Action extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <button 
-//                     onClick={this.props.handlePick}
-//                     disabled={!this.props.hasOptions}
-//                 >
-//                     What should I do?
-//                 </button>
-//             </div>
-//         );
-//     }
-// }
 
 var Options = function Options(props) {
     return React.createElement(
@@ -163,19 +136,6 @@ var Options = function Options(props) {
     );
 };
 
-// class Options extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <button onClick={props.handleDeleteOptions}>Remove All</button>
-//                 {
-//                     props.options.map((option) => <Option key={option} optionText={option}/>)
-//                 }
-//             </div>
-//         );
-//     }
-// }
-
 var Option = function Option(props) {
     return React.createElement(
         'div',
@@ -183,16 +143,6 @@ var Option = function Option(props) {
         props.optionText
     );
 };
-
-// class Option extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 {props.optionText}
-//             </div>
-//         );
-//     }
-// }
 
 var AddOption = function (_React$Component2) {
     _inherits(AddOption, _React$Component2);
@@ -248,14 +198,5 @@ var AddOption = function (_React$Component2) {
 
     return AddOption;
 }(React.Component);
-
-// const User = (props) => {
-//     return (
-//         <div>   
-//             <p>Name: {props.name}</p>
-//             <p>Age: {props.age}</p>
-//         </div>
-//     );
-// };
 
 ReactDOM.render(React.createElement(IndecisionApp, null), document.getElementById('app'));
