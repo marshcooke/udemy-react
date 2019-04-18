@@ -10,10 +10,10 @@ class IndecisionApp extends React.Component {
         };
     }
     componentDidMount() {
-        console.log('componentDidMount');
+        console.log('fetching data! go fetch');
     }
     componentDidUpdate(prevProps, PrevState) {
-        console.log('componentDidUpdate');
+        console.log('saving data! Super Update');
     }
     componentWillUnmount() {
         console.log('componentWillUnmount');

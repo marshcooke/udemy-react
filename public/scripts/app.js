@@ -29,12 +29,12 @@ var IndecisionApp = function (_React$Component) {
     _createClass(IndecisionApp, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
-            console.log('componentDidMount');
+            console.log('fetching data! go fetch');
         }
     }, {
         key: 'componentDidUpdate',
         value: function componentDidUpdate(prevProps, PrevState) {
-            console.log('componentDidUpdate');
+            console.log('saving data! Super Update');
         }
     }, {
         key: 'componentWillUnmount',
