@@ -39,21 +39,19 @@ class IndecisionApp extends React.Component {
         }));
     } 
     handlePick() {
-        this.setState(() => {
-            const randomNum = Math.floor(Math.random() * this.state.options.length);
-            const option = this.state.options[randomNum];
-            alert(option);
-        });
+        const randomNum = Math.floor(Math.random() * this.state.options.length);
+        const option = this.state.options[randomNum];
+        alert(option);
     }
     handleAddOption(option) {
         if (!option) {
-            return 'Enter valid value to add an option.'
+            return 'Enter valid value to add an option.';
         } else if (this.state.options.indexOf(option) > -1) {
-            return 'This option already exists.'
+            return 'This option already exists.';
         }
 
         this.setState((prevState) => ({ 
-            options: [prevState.options.concat(option)] 
+            options: prevState.options.concat(option)
         }));
     }
     render() {
