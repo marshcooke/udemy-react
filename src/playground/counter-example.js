@@ -21,9 +21,6 @@ class Counter extends React.Component {
             localStorage.setItem('count', this.state.count);
         }
     }
-    // componentWillUnmount() {
-    //     console.log('componentWillUnmount');
-    // }
     handleAddOne() {
         this.setState((prevState) => {
             return {
