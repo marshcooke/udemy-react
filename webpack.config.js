@@ -1,5 +1,3 @@
-// entry point -> output 
-
 const path = require('path');
 
 module.exports = {
