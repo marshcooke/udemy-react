@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -68,8 +68,22 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+const isAdult = (age) => age >= 18;
+/* harmony export (immutable) */ __webpack_exports__["b"] = isAdult;
+
+
+const canDrink = (age) => age >= 21;
+/* harmony export (immutable) */ __webpack_exports__["a"] = canDrink;
+
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__person_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__person_js__ = __webpack_require__(0);
 // import './utils.js';
 // import { square, add } from './utils.js';
 
@@ -78,36 +92,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // console.log(add(100, 23));
 
 
-// create new person.js file
-// which will export two named exports 
-// isAdult(18) - true if adult, otherwise false
-// canDrink(18) - true if 21 and over, otherwise false
-
-// import isAdult and canDrink
-// use both priniting result to the console 
 
 
-
-
-console.log('app.js is running!');
 console.log(__WEBPACK_IMPORTED_MODULE_0__person_js__["b" /* isAdult */](7));
 console.log(__WEBPACK_IMPORTED_MODULE_0__person_js__["a" /* canDrink */](30));
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-console.log('person.js is running.');
-
-const isAdult = (age) => age >= 18;
-/* harmony export (immutable) */ __webpack_exports__["b"] = isAdult;
-
-
-const canDrink = (age) => age >= 21;
-/* harmony export (immutable) */ __webpack_exports__["a"] = canDrink;
-
 
 
 /***/ })
