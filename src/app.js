@@ -83,8 +83,6 @@ class IndecisionApp extends React.Component {
     }
 }
 
-// create the file for Header and Action, copy the code, set up import/export for the file.
-
 const Options = (props) => {
     return (
         <div>

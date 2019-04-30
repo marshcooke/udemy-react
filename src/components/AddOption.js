@@ -31,4 +31,4 @@ export default class AddOption extends React.Component {
             </div>
         );
     }
-}
+};
