@@ -20,3 +20,5 @@ const Options = (props) => {
 };
 
 export default Options;
+
+// adusting four files for a useful technique
