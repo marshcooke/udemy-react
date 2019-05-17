@@ -3,3 +3,9 @@
     margin: 0 auto;
     padding: 0 $m-size;
 }
+
+// dark-blue with value of #333745
+// use as the body background
+.body {
+    background: $dark-blue;
+}
