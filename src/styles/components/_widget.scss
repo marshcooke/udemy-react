@@ -4,6 +4,21 @@
     margin-bottom: $xl-size;
 }
 
+.widget__message {
+    border-bottom: 1px solid lighten($light-blue, 10%);
+    color: $off-white;
+    margin: 0;
+    padding: $l-size;
+    text-align: center;
+}
+
+// create a widget element selector
+// call it message. Use it on the <p> message, set up styles
+// off white color, no margin 
+// l-size padding on all sides
+// center text using text-align
+// set border-bottom to 1px solid border, lightened version (10%) of $light-blue
+
 // Widget Header
 .widget-header {
     background: $blue;
