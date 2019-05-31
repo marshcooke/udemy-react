@@ -8,7 +8,7 @@
 ![Indecision App](/public/images/indecision-app-screenshot.png "Indecision App main page")
 
 - Displaying options
-![Indecision App with displayed options](/server/public/images/indecision-app-options.png "Indecision App with displayed options")
+![Indecision App with displayed options](/public/images/indecision-app-options.png "Indecision App with displayed options")
 
 - With an option selected
-![Selected option on Indecision App](/server/public/images/indecision-app-selected.png "Selected option on Indecision App")
+![Selected option on Indecision App](/public/images/indecision-app-selected.png "Selected option on Indecision App")
