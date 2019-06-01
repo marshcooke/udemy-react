@@ -1,4 +1,4 @@
-# This will be where I track my udemy-react course focused on Indecision App
+# This is where I tracked my udemy-react course focused on the Indecision App
 
 ## Started Feb 21, Completed May 28
 
